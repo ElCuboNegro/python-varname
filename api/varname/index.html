@@ -1,0 +1,1235 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+      
+      <link rel="shortcut icon" href="../../favicon.png">
+      <meta name="generator" content="mkdocs-1.1.2, mkdocs-material-6.2.2">
+    
+    
+      
+        <title>API - varname</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../assets/stylesheets/main.73f7c429.min.css">
+      
+        
+        <link rel="stylesheet" href="../../assets/stylesheets/palette.39b8e14a.min.css">
+        
+          
+          
+          <meta name="theme-color" content="#2094f3">
+        
+      
+    
+    
+    
+      
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,400i,700%7CRoboto+Mono&display=fallback">
+        <style>body,input{font-family:"Roboto",-apple-system,BlinkMacSystemFont,Helvetica,Arial,sans-serif}code,kbd,pre{font-family:"Roboto Mono",SFMono-Regular,Consolas,Menlo,monospace}</style>
+      
+    
+    
+    
+      <link rel="stylesheet" href="//use.fontawesome.com/releases/v5.8.1/css/all.css">
+    
+      <link rel="stylesheet" href="//use.fontawesome.com/releases/v5.8.1/css/v4-shims.css">
+    
+      <link rel="stylesheet" href="../../css/mkapi-common.css">
+    
+      <link rel="stylesheet" href="../../style.css">
+    
+    
+      
+    
+    
+  </head>
+  
+  
+    
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="" data-md-color-primary="blue" data-md-color-accent="">
+      
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#varname" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+      
+
+<header class="md-header" data-md-component="header">
+  <nav class="md-header-nav md-grid" aria-label="Header">
+    <a href="../.." title="varname" class="md-header-nav__button md-logo" aria-label="varname">
+      
+  <img src="../../favicon.png" alt="logo">
+
+    </a>
+    <label class="md-header-nav__button md-icon" for="__drawer">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3V6m0 5h18v2H3v-2m0 5h18v2H3v-2z"/></svg>
+    </label>
+    <div class="md-header-nav__title" data-md-component="header-title">
+      <div class="md-header-nav__ellipsis">
+        <div class="md-header-nav__topic">
+          <span class="md-ellipsis">
+            varname
+          </span>
+        </div>
+        <div class="md-header-nav__topic">
+          <span class="md-ellipsis">
+            
+              API
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      <label class="md-header-nav__button md-icon" for="__search">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0116 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 019.5 16 6.5 6.5 0 013 9.5 6.5 6.5 0 019.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5z"/></svg>
+      </label>
+      
+<div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" data-md-state="active" required>
+      <label class="md-search__icon md-icon" for="__search">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0116 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 019.5 16 6.5 6.5 0 013 9.5 6.5 6.5 0 019.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5z"/></svg>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
+      </label>
+      <button type="reset" class="md-search__icon md-icon" aria-label="Clear" data-md-component="search-reset" tabindex="-1">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41z"/></svg>
+      </button>
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+    
+  </nav>
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+
+
+<nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../.." title="varname" class="md-nav__button md-logo" aria-label="varname">
+      
+  <img src="../../favicon.png" alt="logo">
+
+    </a>
+    varname
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+      
+
+
+
+  <li class="md-nav__item">
+    <a href="../.." class="md-nav__link">
+      
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+
+  <li class="md-nav__item">
+    <a href="../.." class="md-nav__link">
+      Home
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  
+
+
+  <li class="md-nav__item md-nav__item--active">
+    
+    <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
+    
+    
+      <label class="md-nav__link md-nav__link--active" for="__toc">
+        API
+        <span class="md-nav__icon md-icon"></span>
+      </label>
+    
+    <a href="./" class="md-nav__link md-nav__link--active">
+      API
+    </a>
+    
+      
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#varname" class="md-nav__link">
+    varname
+  </a>
+  
+    <nav class="md-nav" aria-label="varname">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#varnamevarnameretrievingerror" class="md-nav__link">
+    VarnameRetrievingError
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#varnamevarname" class="md-nav__link">
+    varname
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#varnamewill" class="md-nav__link">
+    will
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#varnameregister" class="md-nav__link">
+    register
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#varnameinject_varname" class="md-nav__link">
+    inject_varname
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#varnameinject" class="md-nav__link">
+    inject
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#varnamenameof" class="md-nav__link">
+    nameof
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#varnamedebug" class="md-nav__link">
+    debug
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#varnamenamedtuple" class="md-nav__link">
+    namedtuple
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#varnamewrapper" class="md-nav__link">
+    Wrapper
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+    
+  </li>
+
+    
+      
+      
+      
+
+
+
+  <li class="md-nav__item">
+    <a href="../../CHANGELOG/" class="md-nav__link">
+      Change Log
+    </a>
+  </li>
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#varname" class="md-nav__link">
+    varname
+  </a>
+  
+    <nav class="md-nav" aria-label="varname">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#varnamevarnameretrievingerror" class="md-nav__link">
+    VarnameRetrievingError
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#varnamevarname" class="md-nav__link">
+    varname
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#varnamewill" class="md-nav__link">
+    will
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#varnameregister" class="md-nav__link">
+    register
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#varnameinject_varname" class="md-nav__link">
+    inject_varname
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#varnameinject" class="md-nav__link">
+    inject
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#varnamenameof" class="md-nav__link">
+    nameof
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#varnamedebug" class="md-nav__link">
+    debug
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#varnamenamedtuple" class="md-nav__link">
+    namedtuple
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#varnamewrapper" class="md-nav__link">
+    Wrapper
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          <div class="md-content">
+            <article class="md-content__inner md-typeset">
+              
+                
+                
+                  <h1>API</h1>
+                
+                <div class="mkapi-node" id="varname">
+<div class='mkapi-object-container'>
+  <div class="mkapi-object module plain top">
+    <div class="mkapi-object-kind module top">module</div>
+    <h2 id="varname" class="mkapi-object-body module top"><span class="mkapi-object-name">varname</span></h2>
+  </div>
+  <div class="mkapi-src-link">
+    <a class="mkapi-src-link" href="../source/varname/#varname" title="Source for varname">&lt;/&gt;</a>
+  </div>
+</div>
+<div class="mkapi-docstring">
+<div class="mkapi-section">
+      <div class="mkapi-section-body"><p>Dark magics about variable name in python</p></div>
+    </div>
+  <div class="mkapi-section classes">
+      <div class="mkapi-section-name classes">
+          <span class="mkapi-section-name-body classes">Classes</span> 
+        </div>
+      <div class="mkapi-section-body classes"><ul class="mkapi-items">
+<li class="class"><code class="mkapi-item-name"><a href="#varname.VarnameRetrievingError">VarnameRetrievingError</a></code>
+
+<span class="mkapi-item-dash">&mdash;</span> <span class="mkapi-item-description">When failed to retrieve the varname<a class="mkapi-src-link" href="../source/varname/#varname.VarnameRetrievingError" title="Source for varname.VarnameRetrievingError">&lt;/&gt;</a></span></li>
+
+<li class="class"><code class="mkapi-item-name"><a href="#varname.Wrapper">Wrapper</a></code>
+
+<span class="mkapi-item-dash">&mdash;</span> <span class="mkapi-item-description">A wrapper with ability to retrieve the variable name<a class="mkapi-src-link" href="../source/varname/#varname.Wrapper" title="Source for varname.Wrapper">&lt;/&gt;</a></span></li>
+
+
+</ul></div>
+    </div>
+  <div class="mkapi-section functions">
+      <div class="mkapi-section-name functions">
+          <span class="mkapi-section-name-body functions">Functions</span> 
+        </div>
+      <div class="mkapi-section-body functions"><ul class="mkapi-items">
+<li class="function"><code class="mkapi-item-name"><a href="#varname.debug">debug</a></code><code class="mkapi-object-parenthesis">(</code><code class="mkapi-object-signature">var</code>, <code class="mkapi-object-signature">*more_vars</code>, <code class="mkapi-object-signature">prefix</code>, <code class="mkapi-object-signature">merge</code>, <code class="mkapi-object-signature">repr</code><code class="mkapi-object-parenthesis">)</code>
+
+<span class="mkapi-item-dash">&mdash;</span> <span class="mkapi-item-description">Print variable names and values.<a class="mkapi-src-link" href="../source/varname/#varname.debug" title="Source for varname.debug">&lt;/&gt;</a></span></li>
+
+<li class="function"><code class="mkapi-item-name"><a href="#varname.inject">inject</a></code><code class="mkapi-object-parenthesis">(</code><code class="mkapi-object-signature">obj</code><code class="mkapi-object-parenthesis">)</code>
+<span class="mkapi-item-type">(object)</span>
+<span class="mkapi-item-dash">&mdash;</span> <span class="mkapi-item-description">Inject attribute <code>__varname__</code> to an object<a class="mkapi-src-link" href="../source/varname/#varname.inject" title="Source for varname.inject">&lt;/&gt;</a></span></li>
+
+<li class="function"><code class="mkapi-item-name"><a href="#varname.inject_varname">inject_varname</a></code><code class="mkapi-object-parenthesis">(</code><code class="mkapi-object-signature">cls</code>, <code class="mkapi-object-signature">caller</code>, <code class="mkapi-object-signature">multi_vars</code>, <code class="mkapi-object-signature">raise_exc</code><code class="mkapi-object-parenthesis">)</code>
+<span class="mkapi-item-type">(Union(type, callable(type: type)))</span>
+<span class="mkapi-item-dash">&mdash;</span> <span class="mkapi-item-description">Alias of register. Will be deprecated<a class="mkapi-src-link" href="../source/varname/#varname.inject_varname" title="Source for varname.inject_varname">&lt;/&gt;</a></span></li>
+
+<li class="function"><code class="mkapi-item-name"><a href="#varname.namedtuple">namedtuple</a></code><code class="mkapi-object-parenthesis">(</code><code class="mkapi-object-signature">*args</code>, <code class="mkapi-object-signature">**kwargs</code><code class="mkapi-object-parenthesis">)</code>
+<span class="mkapi-item-type">(type)</span>
+<span class="mkapi-item-dash">&mdash;</span> <span class="mkapi-item-description">A shortcut for namedtuple<a class="mkapi-src-link" href="../source/varname/#varname.namedtuple" title="Source for varname.namedtuple">&lt;/&gt;</a></span></li>
+
+<li class="function"><code class="mkapi-item-name"><a href="#varname.nameof">nameof</a></code><code class="mkapi-object-parenthesis">(</code><code class="mkapi-object-signature">var</code>, <code class="mkapi-object-signature">*more_vars</code>, <code class="mkapi-object-signature">caller</code>, <code class="mkapi-object-signature">full</code><code class="mkapi-object-parenthesis">)</code>
+<span class="mkapi-item-type">(str or (str))</span>
+<span class="mkapi-item-dash">&mdash;</span> <span class="mkapi-item-description">Get the names of the variables passed in<a class="mkapi-src-link" href="../source/varname/#varname.nameof" title="Source for varname.nameof">&lt;/&gt;</a></span></li>
+
+<li class="function"><code class="mkapi-item-name"><a href="#varname.register">register</a></code><code class="mkapi-object-parenthesis">(</code><code class="mkapi-object-signature">cls</code>, <code class="mkapi-object-signature">caller</code>, <code class="mkapi-object-signature">multi_vars</code>, <code class="mkapi-object-signature">raise_exc</code><code class="mkapi-object-parenthesis">)</code>
+<span class="mkapi-item-type">(Union(type, callable(type: type)))</span>
+<span class="mkapi-item-dash">&mdash;</span> <span class="mkapi-item-description">A decorator to inject <strong>varname</strong> attribute to a class<a class="mkapi-src-link" href="../source/varname/#varname.register" title="Source for varname.register">&lt;/&gt;</a></span></li>
+
+<li class="function"><code class="mkapi-item-name"><a href="#varname.varname">varname</a></code><code class="mkapi-object-parenthesis">(</code><code class="mkapi-object-signature">caller</code>, <code class="mkapi-object-signature">ignore</code>, <code class="mkapi-object-signature">multi_vars</code>, <code class="mkapi-object-signature">raise_exc</code><code class="mkapi-object-parenthesis">)</code>
+<span class="mkapi-item-type">(Union(str, (str or tuple), nonetype))</span>
+<span class="mkapi-item-dash">&mdash;</span> <span class="mkapi-item-description">Get the variable name that assigned by function/class calls<a class="mkapi-src-link" href="../source/varname/#varname.varname" title="Source for varname.varname">&lt;/&gt;</a></span></li>
+
+<li class="function"><code class="mkapi-item-name"><a href="#varname.will">will</a></code><code class="mkapi-object-parenthesis">(</code><code class="mkapi-object-signature">caller</code>, <code class="mkapi-object-signature">raise_exc</code><code class="mkapi-object-parenthesis">)</code>
+<span class="mkapi-item-type">(str, optional)</span>
+<span class="mkapi-item-dash">&mdash;</span> <span class="mkapi-item-description">Detect the attribute name right immediately after a function call.<a class="mkapi-src-link" href="../source/varname/#varname.will" title="Source for varname.will">&lt;/&gt;</a></span></li>
+
+
+</ul></div>
+    </div>
+  </div>
+
+</div>
+
+<div class="mkapi-node" id="varname.VarnameRetrievingError">
+<div class='mkapi-object-container'>
+  <div class="mkapi-object class code top">
+    <div class="mkapi-object-kind class top">class</div>
+    <h3 id="varnamevarnameretrievingerror" class="mkapi-object-body class top"><code class="mkapi-object-prefix"><a href="#varname">varname</a>.</code><code class="mkapi-object-name">VarnameRetrievingError</code><code class="mkapi-object-parenthesis">(</code><code class="mkapi-object-parenthesis">)</code></h3>
+  </div>
+  <div class="mkapi-src-link">
+    <a class="mkapi-src-link" href="../source/varname/#varname.VarnameRetrievingError" title="Source for varname.VarnameRetrievingError">&lt;/&gt;</a>
+  </div>
+</div>
+<div class="mkapi-docstring">
+<div class="mkapi-section bases">
+      <div class="mkapi-section-name bases">
+          <span class="mkapi-section-name-body bases">Bases</span> 
+        </div>
+      <div class="mkapi-section-body bases">
+<span class="mkapi-base">Exception</span>
+
+<span class="mkapi-base">BaseException</span>
+</div>
+    </div>
+  <div class="mkapi-section">
+      <div class="mkapi-section-body"><p>When failed to retrieve the varname</p></div>
+    </div>
+  </div>
+
+</div>
+
+<div class="mkapi-node" id="varname.varname">
+<div class='mkapi-object-container'>
+  <div class="mkapi-object function code top">
+    <div class="mkapi-object-kind function top">function</div>
+    <h3 id="varnamevarname" class="mkapi-object-body function top"><code class="mkapi-object-prefix"><a href="#varname">varname</a>.</code><code class="mkapi-object-name">varname</code><code class="mkapi-object-parenthesis">(</code><code class="mkapi-object-signature">caller=1</code>, <code class="mkapi-object-signature">ignore=None</code>, <code class="mkapi-object-signature">multi_vars=False</code>, <code class="mkapi-object-signature">raise_exc=True</code><code class="mkapi-object-parenthesis">)</code></h3>
+  </div>
+  <div class="mkapi-src-link">
+    <a class="mkapi-src-link" href="../source/varname/#varname.varname" title="Source for varname.varname">&lt;/&gt;</a>
+  </div>
+</div>
+<div class="mkapi-docstring">
+<div class="mkapi-section">
+      <div class="mkapi-section-body"><p>Get the variable name that assigned by function/class calls</p>
+<p>To debug and specify the right caller and ignore arguments, you can set
+debug on and see how the frames are ignored or selected:</p>
+<div class="highlight"><pre><span></span><code><span class="o">&gt;&gt;&gt;</span> <span class="kn">import</span> <span class="nn">varname</span>
+<span class="o">&gt;&gt;&gt;</span> <span class="n">varname</span><span class="o">.</span><span class="n">DEBUG</span> <span class="o">=</span> <span class="kc">True</span>
+</code></pre></div></div>
+    </div>
+  <div class="mkapi-section parameters">
+      <div class="mkapi-section-name parameters">
+          <span class="mkapi-section-name-body parameters">Parameters</span> 
+        </div>
+      <div class="mkapi-section-body parameters"><ul class="mkapi-items">
+<li><code class="mkapi-item-name">caller</code>
+<span class="mkapi-item-type">(int, optional)</span>
+<span class="mkapi-item-dash">&mdash;</span> <span class="mkapi-item-description">The call frame index, indicating where this function
+is called relative to where the variable is finally retrieved
+Frames are counted with the ignored ones being excluded.
+See <code>ignore</code> for frames to be ignored.</span></li>
+
+<li><code class="mkapi-item-name">ignore</code>
+<span class="mkapi-item-type">(list of Union(module, (module, str)), optional)</span>
+<span class="mkapi-item-dash">&mdash;</span> <span class="mkapi-item-description">A list of modules or tuples of module and qualname that
+you want to ignore for the intermediate calls.
+For example, <code>['module']</code> ignores all intermediate calls
+from <code>module</code> and its submodules, but <code>[(module, 'func')]</code>
+only ignores the calls (qual)named <code>func</code> from <code>module</code>.
+By default, all calls from <code>varname</code> and builtin modules
+(in <code>sys.builtin_module_names</code>) are ignored.
+Note that the qualname in the module should exist and be unique.</span></li>
+
+<li><code class="mkapi-item-name">multi_vars</code>
+<span class="mkapi-item-type">(bool, optional)</span>
+<span class="mkapi-item-dash">&mdash;</span> <span class="mkapi-item-description">Whether allow multiple variables on left-hand side (LHS).
+If <code>True</code>, this function returns a tuple of the variable names,
+even there is only one variable on LHS.
+If <code>False</code>, and multiple variables on LHS, a
+<code>VarnameRetrievingError</code> will be raised.</span></li>
+
+<li><code class="mkapi-item-name">raise_exc</code>
+<span class="mkapi-item-type">(bool, optional)</span>
+<span class="mkapi-item-dash">&mdash;</span> <span class="mkapi-item-description">Whether we should raise an exception if failed
+to retrieve the name.</span></li>
+
+
+</ul></div>
+    </div>
+  <div class="mkapi-section returns">
+      <div class="mkapi-section-name returns">
+          <span class="mkapi-section-name-body returns">Returns</span> <span class="mkapi-item-type">(Union(str, (str or tuple), nonetype))</span>
+        </div>
+      <div class="mkapi-section-body returns"><p>The variable name, or <code>None</code> when <code>raise_exc</code> is <code>False</code> and
+    we failed to retrieve the variable name.
+A tuple or a hierarchy (tuple of tuples) of variable names
+    when <code>multi_vars</code> is <code>True</code>.</p></div>
+    </div>
+  <div class="mkapi-section raises">
+      <div class="mkapi-section-name raises">
+          <span class="mkapi-section-name-body raises">Raises</span> 
+        </div>
+      <div class="mkapi-section-body raises"><ul class="mkapi-items">
+<li><code class="mkapi-item-name">UserWarning</code>
+
+<span class="mkapi-item-dash">&mdash;</span> <span class="mkapi-item-description">When there are multiple target
+in the assign node. (e.g: <code>a = b = func()</code>, in such a case,
+<code>b == 'a'</code>, may not be the case you want)</span></li>
+
+<li><code class="mkapi-item-name">VarnameRetrievingError</code>
+
+<span class="mkapi-item-dash">&mdash;</span> <span class="mkapi-item-description">When there is invalid variables or
+invalid number of variables used on the LHS; or
+when we are unable to retrieve the variable name and <code>raise_exc</code>
+is set to <code>True</code>.</span></li>
+
+
+</ul></div>
+    </div>
+  </div>
+
+</div>
+
+<div class="mkapi-node" id="varname.will">
+<div class='mkapi-object-container'>
+  <div class="mkapi-object function code top">
+    <div class="mkapi-object-kind function top">function</div>
+    <h3 id="varnamewill" class="mkapi-object-body function top"><code class="mkapi-object-prefix"><a href="#varname">varname</a>.</code><code class="mkapi-object-name">will</code><code class="mkapi-object-parenthesis">(</code><code class="mkapi-object-signature">caller=1</code>, <code class="mkapi-object-signature">raise_exc=True</code><code class="mkapi-object-parenthesis">)</code></h3>
+  </div>
+  <div class="mkapi-src-link">
+    <a class="mkapi-src-link" href="../source/varname/#varname.will" title="Source for varname.will">&lt;/&gt;</a>
+  </div>
+</div>
+<div class="mkapi-docstring">
+<div class="mkapi-section">
+      <div class="mkapi-section-body"><p>Detect the attribute name right immediately after a function call.</p></div>
+    </div>
+  <div class="mkapi-section examples">
+      <div class="mkapi-section-name examples">
+          <span class="mkapi-section-name-body examples">Examples</span> 
+        </div>
+      <div class="mkapi-section-body examples"><div class="highlight"><pre><span></span><code><span class="o">&gt;&gt;&gt;</span> <span class="k">class</span> <span class="nc">AwesomeClass</span><span class="p">:</span>
+<span class="o">&gt;&gt;&gt;</span>     <span class="k">def</span> <span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+<span class="o">&gt;&gt;&gt;</span>         <span class="bp">self</span><span class="o">.</span><span class="n">will</span> <span class="o">=</span> <span class="kc">None</span>
+</code></pre></div>
+<div class="highlight"><pre><span></span><code><span class="o">&gt;&gt;&gt;</span>     <span class="k">def</span> <span class="nf">permit</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+<span class="o">&gt;&gt;&gt;</span>         <span class="bp">self</span><span class="o">.</span><span class="n">will</span> <span class="o">=</span> <span class="n">will</span><span class="p">()</span>
+<span class="o">&gt;&gt;&gt;</span>         <span class="k">if</span> <span class="bp">self</span><span class="o">.</span><span class="n">will</span> <span class="o">==</span> <span class="s1">&#39;do&#39;</span><span class="p">:</span>
+<span class="o">&gt;&gt;&gt;</span>             <span class="c1"># let self handle do</span>
+<span class="o">&gt;&gt;&gt;</span>             <span class="k">return</span> <span class="bp">self</span>
+<span class="o">&gt;&gt;&gt;</span>         <span class="k">raise</span> <span class="ne">AttributeError</span><span class="p">(</span>
+<span class="o">&gt;&gt;&gt;</span>             <span class="s1">&#39;Should do something with AwesomeClass object&#39;</span>
+<span class="o">&gt;&gt;&gt;</span>         <span class="p">)</span>
+</code></pre></div>
+<div class="highlight"><pre><span></span><code><span class="o">&gt;&gt;&gt;</span>     <span class="k">def</span> <span class="nf">do</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+<span class="o">&gt;&gt;&gt;</span>         <span class="k">if</span> <span class="bp">self</span><span class="o">.</span><span class="n">will</span> <span class="o">!=</span> <span class="s1">&#39;do&#39;</span><span class="p">:</span>
+<span class="o">&gt;&gt;&gt;</span>             <span class="k">raise</span> <span class="ne">AttributeError</span><span class="p">(</span><span class="s2">&quot;You don&#39;t have permission to do&quot;</span><span class="p">)</span>
+<span class="o">&gt;&gt;&gt;</span>         <span class="k">return</span> <span class="s1">&#39;I am doing!&#39;</span>
+</code></pre></div>
+<div class="highlight"><pre><span></span><code><span class="o">&gt;&gt;&gt;</span> <span class="n">awesome</span> <span class="o">=</span> <span class="n">AwesomeClass</span><span class="p">()</span>
+<span class="o">&gt;&gt;&gt;</span> <span class="c1"># AttributeError: You don&#39;t have permission to do</span>
+<span class="o">&gt;&gt;&gt;</span> <span class="n">awesome</span><span class="o">.</span><span class="n">do</span><span class="p">()</span>
+<span class="o">&gt;&gt;&gt;</span> <span class="c1"># AttributeError: Should do something with AwesomeClass object</span>
+<span class="o">&gt;&gt;&gt;</span> <span class="n">awesome</span><span class="o">.</span><span class="n">permit</span><span class="p">()</span>
+<span class="o">&gt;&gt;&gt;</span> <span class="n">awesome</span><span class="o">.</span><span class="n">permit</span><span class="p">()</span><span class="o">.</span><span class="n">do</span><span class="p">()</span> <span class="o">==</span> <span class="s1">&#39;I am doing!&#39;</span>
+</code></pre></div></div>
+    </div>
+  <div class="mkapi-section parameters">
+      <div class="mkapi-section-name parameters">
+          <span class="mkapi-section-name-body parameters">Parameters</span> 
+        </div>
+      <div class="mkapi-section-body parameters"><ul class="mkapi-items">
+<li><code class="mkapi-item-name">caller</code>
+<span class="mkapi-item-type">(int, optional)</span>
+<span class="mkapi-item-dash">&mdash;</span> <span class="mkapi-item-description">At which stack this function is called.</span></li>
+
+<li><code class="mkapi-item-name">raise_exc</code>
+<span class="mkapi-item-type">(bool, optional)</span>
+<span class="mkapi-item-dash">&mdash;</span> <span class="mkapi-item-description">Raise exception we failed to detect</span></li>
+
+
+</ul></div>
+    </div>
+  <div class="mkapi-section returns">
+      <div class="mkapi-section-name returns">
+          <span class="mkapi-section-name-body returns">Returns</span> <span class="mkapi-item-type">(str, optional)</span>
+        </div>
+      <div class="mkapi-section-body returns"><p>The attribute name right after the function call
+If there is no attribute attached and <code>raise_exc</code> is <code>False</code></p></div>
+    </div>
+  <div class="mkapi-section raises">
+      <div class="mkapi-section-name raises">
+          <span class="mkapi-section-name-body raises">Raises</span> 
+        </div>
+      <div class="mkapi-section-body raises"><ul class="mkapi-items">
+<li><code class="mkapi-item-name">VarnameRetrievingError</code>
+
+<span class="mkapi-item-dash">&mdash;</span> <span class="mkapi-item-description">When <code>raise_exc</code> is <code>True</code> and we failed to
+detect the attribute name (including not having one)</span></li>
+
+
+</ul></div>
+    </div>
+  </div>
+
+</div>
+
+<div class="mkapi-node" id="varname.register">
+<div class='mkapi-object-container'>
+  <div class="mkapi-object function code top">
+    <div class="mkapi-object-kind function top">function</div>
+    <h3 id="varnameregister" class="mkapi-object-body function top"><code class="mkapi-object-prefix"><a href="#varname">varname</a>.</code><code class="mkapi-object-name">register</code><code class="mkapi-object-parenthesis">(</code><code class="mkapi-object-signature">cls=None</code>, <code class="mkapi-object-signature">caller=1</code>, <code class="mkapi-object-signature">multi_vars=False</code>, <code class="mkapi-object-signature">raise_exc=True</code><code class="mkapi-object-parenthesis">)</code></h3>
+  </div>
+  <div class="mkapi-src-link">
+    <a class="mkapi-src-link" href="../source/varname/#varname.register" title="Source for varname.register">&lt;/&gt;</a>
+  </div>
+</div>
+<div class="mkapi-docstring">
+<div class="mkapi-section">
+      <div class="mkapi-section-body"><p>A decorator to inject <strong>varname</strong> attribute to a class</p></div>
+    </div>
+  <div class="mkapi-section parameters">
+      <div class="mkapi-section-name parameters">
+          <span class="mkapi-section-name-body parameters">Parameters</span> 
+        </div>
+      <div class="mkapi-section-body parameters"><ul class="mkapi-items">
+
+<li><code class="mkapi-item-name">caller</code>
+<span class="mkapi-item-type">(int, optional)</span>
+<span class="mkapi-item-dash">&mdash;</span> <span class="mkapi-item-description">The call stack index, indicating where this class
+is instantiated relative to where the variable is finally retrieved</span></li>
+
+<li><code class="mkapi-item-name">multi_vars</code>
+<span class="mkapi-item-type">(bool, optional)</span>
+<span class="mkapi-item-dash">&mdash;</span> <span class="mkapi-item-description">Whether allow multiple variables on left-hand side (LHS).
+If <code>True</code>, this function returns a tuple of the variable names,
+even there is only one variable on LHS.
+If <code>False</code>, and multiple variables on LHS, a
+<code>VarnameRetrievingError</code> will be raised.</span></li>
+
+<li><code class="mkapi-item-name">raise_exc</code>
+<span class="mkapi-item-type">(bool, optional)</span>
+<span class="mkapi-item-dash">&mdash;</span> <span class="mkapi-item-description">Whether we should raise an exception if failed
+to retrieve the name.</span></li>
+
+
+</ul></div>
+    </div>
+  <div class="mkapi-section examples">
+      <div class="mkapi-section-name examples">
+          <span class="mkapi-section-name-body examples">Examples</span> 
+        </div>
+      <div class="mkapi-section-body examples"><div class="highlight"><pre><span></span><code><span class="o">&gt;&gt;&gt;</span> <span class="nd">@varname</span><span class="o">.</span><span class="n">register</span>
+<span class="o">&gt;&gt;&gt;</span> <span class="k">class</span> <span class="nc">Foo</span><span class="p">:</span> <span class="k">pass</span>
+<span class="o">&gt;&gt;&gt;</span> <span class="n">foo</span> <span class="o">=</span> <span class="n">Foo</span><span class="p">()</span>
+<span class="o">&gt;&gt;&gt;</span> <span class="c1"># foo.__varname__ == &#39;foo&#39;</span>
+</code></pre></div></div>
+    </div>
+  <div class="mkapi-section returns">
+      <div class="mkapi-section-name returns">
+          <span class="mkapi-section-name-body returns">Returns</span> <span class="mkapi-item-type">(Union(type, callable(type: type)))</span>
+        </div>
+      <div class="mkapi-section-body returns"><p>The wrapper function or the class itself if it is specified explictly.</p></div>
+    </div>
+  </div>
+
+</div>
+
+<div class="mkapi-node" id="varname.inject_varname">
+<div class='mkapi-object-container'>
+  <div class="mkapi-object function code top">
+    <div class="mkapi-object-kind function top">function</div>
+    <h3 id="varnameinject_varname" class="mkapi-object-body function top"><code class="mkapi-object-prefix"><a href="#varname">varname</a>.</code><code class="mkapi-object-name">inject_varname</code><code class="mkapi-object-parenthesis">(</code><code class="mkapi-object-signature">cls=None</code>, <code class="mkapi-object-signature">caller=1</code>, <code class="mkapi-object-signature">multi_vars=False</code>, <code class="mkapi-object-signature">raise_exc=True</code><code class="mkapi-object-parenthesis">)</code><span class="mkapi-item-type"> &#x2192; Union(type, callable(type: type))</span></h3>
+  </div>
+  <div class="mkapi-src-link">
+    <a class="mkapi-src-link" href="../source/varname/#varname.inject_varname" title="Source for varname.inject_varname">&lt;/&gt;</a>
+  </div>
+</div>
+<div class="mkapi-docstring">
+<div class="mkapi-section">
+      <div class="mkapi-section-body"><p>Alias of register. Will be deprecated</p></div>
+    </div>
+  </div>
+
+</div>
+
+<div class="mkapi-node" id="varname.inject">
+<div class='mkapi-object-container'>
+  <div class="mkapi-object function code top">
+    <div class="mkapi-object-kind function top">function</div>
+    <h3 id="varnameinject" class="mkapi-object-body function top"><code class="mkapi-object-prefix"><a href="#varname">varname</a>.</code><code class="mkapi-object-name">inject</code><code class="mkapi-object-parenthesis">(</code><code class="mkapi-object-signature">obj</code><code class="mkapi-object-parenthesis">)</code></h3>
+  </div>
+  <div class="mkapi-src-link">
+    <a class="mkapi-src-link" href="../source/varname/#varname.inject" title="Source for varname.inject">&lt;/&gt;</a>
+  </div>
+</div>
+<div class="mkapi-docstring">
+<div class="mkapi-section">
+      <div class="mkapi-section-body"><p>Inject attribute <code>__varname__</code> to an object</p></div>
+    </div>
+  <div class="mkapi-section examples">
+      <div class="mkapi-section-name examples">
+          <span class="mkapi-section-name-body examples">Examples</span> 
+        </div>
+      <div class="mkapi-section-body examples"><div class="highlight"><pre><span></span><code><span class="o">&gt;&gt;&gt;</span> <span class="k">class</span> <span class="nc">MyList</span><span class="p">(</span><span class="nb">list</span><span class="p">):</span>
+<span class="o">&gt;&gt;&gt;</span>     <span class="k">pass</span>
+</code></pre></div>
+<div class="highlight"><pre><span></span><code><span class="o">&gt;&gt;&gt;</span> <span class="n">a</span> <span class="o">=</span> <span class="n">varname</span><span class="o">.</span><span class="n">inject</span><span class="p">(</span><span class="n">MyList</span><span class="p">())</span>
+<span class="o">&gt;&gt;&gt;</span> <span class="n">b</span> <span class="o">=</span> <span class="n">varname</span><span class="o">.</span><span class="n">inject</span><span class="p">(</span><span class="n">MyList</span><span class="p">())</span>
+</code></pre></div>
+<div class="highlight"><pre><span></span><code><span class="o">&gt;&gt;&gt;</span> <span class="n">a</span><span class="o">.</span><span class="n">__varname__</span> <span class="o">==</span> <span class="s1">&#39;a&#39;</span>
+<span class="o">&gt;&gt;&gt;</span> <span class="n">b</span><span class="o">.</span><span class="n">__varname__</span> <span class="o">==</span> <span class="s1">&#39;b&#39;</span>
+</code></pre></div>
+<div class="highlight"><pre><span></span><code><span class="o">&gt;&gt;&gt;</span> <span class="n">a</span> <span class="o">==</span> <span class="n">b</span>
+</code></pre></div>
+<div class="highlight"><pre><span></span><code><span class="o">&gt;&gt;&gt;</span> <span class="c1"># other methods not affected</span>
+<span class="o">&gt;&gt;&gt;</span> <span class="n">a</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="mi">1</span><span class="p">)</span>
+<span class="o">&gt;&gt;&gt;</span> <span class="n">b</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="mi">1</span><span class="p">)</span>
+<span class="o">&gt;&gt;&gt;</span> <span class="n">a</span> <span class="o">==</span> <span class="n">b</span>
+</code></pre></div></div>
+    </div>
+  <div class="mkapi-section parameters">
+      <div class="mkapi-section-name parameters">
+          <span class="mkapi-section-name-body parameters">Parameters</span> 
+        </div>
+      <div class="mkapi-section-body parameters"><ul class="mkapi-items">
+<li><code class="mkapi-item-name">obj</code>
+<span class="mkapi-item-type">(object)</span>
+<span class="mkapi-item-dash">&mdash;</span> <span class="mkapi-item-description">An object that can be injected</span></li>
+
+
+</ul></div>
+    </div>
+  <div class="mkapi-section raises">
+      <div class="mkapi-section-name raises">
+          <span class="mkapi-section-name-body raises">Raises</span> 
+        </div>
+      <div class="mkapi-section-body raises"><ul class="mkapi-items">
+<li><code class="mkapi-item-name">VarnameRetrievingError</code>
+
+<span class="mkapi-item-dash">&mdash;</span> <span class="mkapi-item-description">When <code>__varname__</code> is unable to
+be set as an attribute</span></li>
+
+
+</ul></div>
+    </div>
+  <div class="mkapi-section returns">
+      <div class="mkapi-section-name returns">
+          <span class="mkapi-section-name-body returns">Returns</span> <span class="mkapi-item-type">(object)</span>
+        </div>
+      <div class="mkapi-section-body returns"><p>The object with <strong>varname</strong> injected</p></div>
+    </div>
+  </div>
+
+</div>
+
+<div class="mkapi-node" id="varname.nameof">
+<div class='mkapi-object-container'>
+  <div class="mkapi-object function code top">
+    <div class="mkapi-object-kind function top">function</div>
+    <h3 id="varnamenameof" class="mkapi-object-body function top"><code class="mkapi-object-prefix"><a href="#varname">varname</a>.</code><code class="mkapi-object-name">nameof</code><code class="mkapi-object-parenthesis">(</code><code class="mkapi-object-signature">var</code>, <code class="mkapi-object-signature">*more_vars</code>, <code class="mkapi-object-signature">caller=1</code>, <code class="mkapi-object-signature">full=None</code><code class="mkapi-object-parenthesis">)</code></h3>
+  </div>
+  <div class="mkapi-src-link">
+    <a class="mkapi-src-link" href="../source/varname/#varname.nameof" title="Source for varname.nameof">&lt;/&gt;</a>
+  </div>
+</div>
+<div class="mkapi-docstring">
+<div class="mkapi-section">
+      <div class="mkapi-section-body"><p>Get the names of the variables passed in</p></div>
+    </div>
+  <div class="mkapi-section examples">
+      <div class="mkapi-section-name examples">
+          <span class="mkapi-section-name-body examples">Examples</span> 
+        </div>
+      <div class="mkapi-section-body examples"><div class="highlight"><pre><span></span><code><span class="o">&gt;&gt;&gt;</span> <span class="n">a</span> <span class="o">=</span> <span class="mi">1</span>
+<span class="o">&gt;&gt;&gt;</span> <span class="n">nameof</span><span class="p">(</span><span class="n">a</span><span class="p">)</span> <span class="c1"># &#39;a&#39;</span>
+</code></pre></div>
+<div class="highlight"><pre><span></span><code><span class="o">&gt;&gt;&gt;</span> <span class="n">b</span> <span class="o">=</span> <span class="mi">2</span>
+<span class="o">&gt;&gt;&gt;</span> <span class="n">nameof</span><span class="p">(</span><span class="n">a</span><span class="p">,</span> <span class="n">b</span><span class="p">)</span> <span class="c1"># (&#39;a&#39;, &#39;b&#39;)</span>
+</code></pre></div>
+<div class="highlight"><pre><span></span><code><span class="o">&gt;&gt;&gt;</span> <span class="n">x</span> <span class="o">=</span> <span class="k">lambda</span><span class="p">:</span> <span class="kc">None</span>
+<span class="o">&gt;&gt;&gt;</span> <span class="n">x</span><span class="o">.</span><span class="n">y</span> <span class="o">=</span> <span class="mi">1</span>
+<span class="o">&gt;&gt;&gt;</span> <span class="n">nameof</span><span class="p">(</span><span class="n">x</span><span class="o">.</span><span class="n">y</span><span class="p">,</span> <span class="n">full</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span> <span class="c1"># &#39;x.y&#39;</span>
+</code></pre></div></div>
+    </div>
+  <div class="mkapi-section">
+      <div class="mkapi-section-body"><div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>This function works with the environments where source code is
+available, in other words, the callee's node can be retrieved by
+<code>executing</code>. In some cases, for example, running code from python
+shell/REPL or from <code>exec</code>/<code>eval</code>, we try to fetch the variable name
+from the bytecode. This requires only a single variable name is passed
+to this function and no keyword arguments, meaning that getting full
+names of attribute calls are not supported in such cases.</p>
+</div></div>
+    </div>
+  <div class="mkapi-section parameters">
+      <div class="mkapi-section-name parameters">
+          <span class="mkapi-section-name-body parameters">Parameters</span> 
+        </div>
+      <div class="mkapi-section-body parameters"><ul class="mkapi-items">
+<li><code class="mkapi-item-name">var</code>
+
+<span class="mkapi-item-dash">&mdash;</span> <span class="mkapi-item-description">The variable to retrieve the name of</span></li>
+
+<li><code class="mkapi-item-name">*more_vars</code>
+
+<span class="mkapi-item-dash">&mdash;</span> <span class="mkapi-item-description">Other variables to retrieve the names of</span></li>
+
+<li><code class="mkapi-item-name">caller</code>
+<span class="mkapi-item-type">(int, optional)</span>
+<span class="mkapi-item-dash">&mdash;</span> <span class="mkapi-item-description">The depth of the caller (this function) is called.
+This is useful if you want to wrap this function.
+Note that the calls from varname and builtin modules are ignored.</span></li>
+
+<li><code class="mkapi-item-name">full</code>
+<span class="mkapi-item-type">(bool, optional)</span>
+<span class="mkapi-item-dash">&mdash;</span> <span class="mkapi-item-description">Whether report the full path of the variable.
+For example: <code>nameof(a.b.c, full=True)</code> give you <code>a.b.c</code>
+instead of <code>c</code></span></li>
+
+
+</ul></div>
+    </div>
+  <div class="mkapi-section returns">
+      <div class="mkapi-section-name returns">
+          <span class="mkapi-section-name-body returns">Returns</span> <span class="mkapi-item-type">(str or (str))</span>
+        </div>
+      <div class="mkapi-section-body returns"><p>The names of variables passed in. If a single varialble is passed,
+    return the name of it. If multiple variables are passed, return
+    a tuple of their names.</p></div>
+    </div>
+  <div class="mkapi-section raises">
+      <div class="mkapi-section-name raises">
+          <span class="mkapi-section-name-body raises">Raises</span> 
+        </div>
+      <div class="mkapi-section-body raises"><ul class="mkapi-items">
+<li><code class="mkapi-item-name">VarnameRetrievingError</code>
+
+<span class="mkapi-item-dash">&mdash;</span> <span class="mkapi-item-description">When the callee's node cannot be retrieved or
+trying to retrieve the full name of non attribute series calls.</span></li>
+
+
+</ul></div>
+    </div>
+  </div>
+
+</div>
+
+<div class="mkapi-node" id="varname.debug">
+<div class='mkapi-object-container'>
+  <div class="mkapi-object function code top">
+    <div class="mkapi-object-kind function top">function</div>
+    <h3 id="varnamedebug" class="mkapi-object-body function top"><code class="mkapi-object-prefix"><a href="#varname">varname</a>.</code><code class="mkapi-object-name">debug</code><code class="mkapi-object-parenthesis">(</code><code class="mkapi-object-signature">var</code>, <code class="mkapi-object-signature">*more_vars</code>, <code class="mkapi-object-signature">prefix=&#39;DEBUG: &#39;</code>, <code class="mkapi-object-signature">merge=False</code>, <code class="mkapi-object-signature">repr=True</code><code class="mkapi-object-parenthesis">)</code></h3>
+  </div>
+  <div class="mkapi-src-link">
+    <a class="mkapi-src-link" href="../source/varname/#varname.debug" title="Source for varname.debug">&lt;/&gt;</a>
+  </div>
+</div>
+<div class="mkapi-docstring">
+<div class="mkapi-section">
+      <div class="mkapi-section-body"><p>Print variable names and values.</p></div>
+    </div>
+  <div class="mkapi-section examples">
+      <div class="mkapi-section-name examples">
+          <span class="mkapi-section-name-body examples">Examples</span> 
+        </div>
+      <div class="mkapi-section-body examples"><div class="highlight"><pre><span></span><code><span class="o">&gt;&gt;&gt;</span> <span class="n">a</span> <span class="o">=</span> <span class="mi">1</span>
+<span class="o">&gt;&gt;&gt;</span> <span class="n">b</span> <span class="o">=</span> <span class="nb">object</span>
+<span class="o">&gt;&gt;&gt;</span> <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s1">&#39;a=</span><span class="si">{</span><span class="n">a</span><span class="si">}</span><span class="s1">&#39;</span><span class="p">)</span> <span class="c1"># previously, we have to do</span>
+<span class="o">&gt;&gt;&gt;</span> <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s1">&#39;</span><span class="si">{</span><span class="n">a</span><span class="si">=}</span><span class="s1">&#39;</span><span class="p">)</span>  <span class="c1"># or with python3.8</span>
+<span class="o">&gt;&gt;&gt;</span> <span class="c1"># instead we can do:</span>
+<span class="o">&gt;&gt;&gt;</span> <span class="n">debug</span><span class="p">(</span><span class="n">a</span><span class="p">)</span> <span class="c1"># DEBUG: a=1</span>
+<span class="o">&gt;&gt;&gt;</span> <span class="n">debug</span><span class="p">(</span><span class="n">a</span><span class="p">,</span> <span class="n">prefix</span><span class="o">=</span><span class="s1">&#39;&#39;</span><span class="p">)</span> <span class="c1"># a=1</span>
+<span class="o">&gt;&gt;&gt;</span> <span class="n">debug</span><span class="p">(</span><span class="n">a</span><span class="p">,</span> <span class="n">b</span><span class="p">,</span> <span class="n">merge</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span> <span class="c1"># a=1, b=&lt;object object at 0x2b9a4c89cf00&gt;</span>
+</code></pre></div></div>
+    </div>
+  <div class="mkapi-section parameters">
+      <div class="mkapi-section-name parameters">
+          <span class="mkapi-section-name-body parameters">Parameters</span> 
+        </div>
+      <div class="mkapi-section-body parameters"><ul class="mkapi-items">
+<li><code class="mkapi-item-name">var</code>
+
+<span class="mkapi-item-dash">&mdash;</span> <span class="mkapi-item-description">The variable to print</span></li>
+
+<li><code class="mkapi-item-name">*more_vars</code>
+
+<span class="mkapi-item-dash">&mdash;</span> <span class="mkapi-item-description">Other variables to print</span></li>
+
+<li><code class="mkapi-item-name">prefix</code>
+<span class="mkapi-item-type">(str, optional)</span>
+<span class="mkapi-item-dash">&mdash;</span> <span class="mkapi-item-description">A prefix to print for each line</span></li>
+
+<li><code class="mkapi-item-name">merge</code>
+<span class="mkapi-item-type">(bool, optional)</span>
+<span class="mkapi-item-dash">&mdash;</span> <span class="mkapi-item-description">Whether merge all variables in one line or not</span></li>
+
+<li><code class="mkapi-item-name">repr</code>
+<span class="mkapi-item-type">(bool, optional)</span>
+<span class="mkapi-item-dash">&mdash;</span> <span class="mkapi-item-description">Print the value as <code>repr(var)</code>? otherwise <code>str(var)</code></span></li>
+
+
+</ul></div>
+    </div>
+  </div>
+
+</div>
+
+<div class="mkapi-node" id="varname.namedtuple">
+<div class='mkapi-object-container'>
+  <div class="mkapi-object function code top">
+    <div class="mkapi-object-kind function top">function</div>
+    <h3 id="varnamenamedtuple" class="mkapi-object-body function top"><code class="mkapi-object-prefix"><a href="#varname">varname</a>.</code><code class="mkapi-object-name">namedtuple</code><code class="mkapi-object-parenthesis">(</code><code class="mkapi-object-signature">*args</code>, <code class="mkapi-object-signature">**kwargs</code><code class="mkapi-object-parenthesis">)</code></h3>
+  </div>
+  <div class="mkapi-src-link">
+    <a class="mkapi-src-link" href="../source/varname/#varname.namedtuple" title="Source for varname.namedtuple">&lt;/&gt;</a>
+  </div>
+</div>
+<div class="mkapi-docstring">
+<div class="mkapi-section">
+      <div class="mkapi-section-body"><p>A shortcut for namedtuple</p>
+<p>You don't need to specify the typename, which will be fetched from
+the variable name.</p>
+<p>So instead of:
+<div class="highlight"><pre><span></span><code><span class="o">&gt;&gt;&gt;</span> <span class="kn">from</span> <span class="nn">collections</span> <span class="kn">import</span> <span class="n">namedtuple</span>
+<span class="o">&gt;&gt;&gt;</span> <span class="n">Name</span> <span class="o">=</span> <span class="n">namedtuple</span><span class="p">(</span><span class="s1">&#39;Name&#39;</span><span class="p">,</span> <span class="p">[</span><span class="s1">&#39;first&#39;</span><span class="p">,</span> <span class="s1">&#39;last&#39;</span><span class="p">])</span>
+</code></pre></div></p>
+<p>You can do:
+<div class="highlight"><pre><span></span><code><span class="o">&gt;&gt;&gt;</span> <span class="kn">from</span> <span class="nn">varname</span> <span class="kn">import</span> <span class="n">namedtuple</span>
+<span class="o">&gt;&gt;&gt;</span> <span class="n">Name</span> <span class="o">=</span> <span class="n">namedtuple</span><span class="p">([</span><span class="s1">&#39;first&#39;</span><span class="p">,</span> <span class="s1">&#39;last&#39;</span><span class="p">])</span>
+</code></pre></div></p></div>
+    </div>
+  <div class="mkapi-section parameters">
+      <div class="mkapi-section-name parameters">
+          <span class="mkapi-section-name-body parameters">Parameters</span> 
+        </div>
+      <div class="mkapi-section-body parameters"><ul class="mkapi-items">
+<li><code class="mkapi-item-name">*args</code>
+
+<span class="mkapi-item-dash">&mdash;</span> <span class="mkapi-item-description">arguments for <code>collections.namedtuple</code> except <code>typename</code></span></li>
+
+<li><code class="mkapi-item-name">**kwargs</code>
+
+<span class="mkapi-item-dash">&mdash;</span> <span class="mkapi-item-description">keyword arguments for <code>collections.namedtuple</code>
+except <code>typename</code></span></li>
+
+
+</ul></div>
+    </div>
+  <div class="mkapi-section returns">
+      <div class="mkapi-section-name returns">
+          <span class="mkapi-section-name-body returns">Returns</span> <span class="mkapi-item-type">(type)</span>
+        </div>
+      <div class="mkapi-section-body returns"><p>The namedtuple you desired.</p></div>
+    </div>
+  </div>
+
+</div>
+
+<div class="mkapi-node" id="varname.Wrapper">
+<div class='mkapi-object-container'>
+  <div class="mkapi-object class code top">
+    <div class="mkapi-object-kind class top">class</div>
+    <h3 id="varnamewrapper" class="mkapi-object-body class top"><code class="mkapi-object-prefix"><a href="#varname">varname</a>.</code><code class="mkapi-object-name">Wrapper</code><code class="mkapi-object-parenthesis">(</code><code class="mkapi-object-signature">value</code>, <code class="mkapi-object-signature">raise_exc=True</code><code class="mkapi-object-parenthesis">)</code></h3>
+  </div>
+  <div class="mkapi-src-link">
+    <a class="mkapi-src-link" href="../source/varname/#varname.Wrapper" title="Source for varname.Wrapper">&lt;/&gt;</a>
+  </div>
+</div>
+<div class="mkapi-docstring">
+<div class="mkapi-section">
+      <div class="mkapi-section-body"><p>A wrapper with ability to retrieve the variable name</p></div>
+    </div>
+  <div class="mkapi-section examples">
+      <div class="mkapi-section-name examples">
+          <span class="mkapi-section-name-body examples">Examples</span> 
+        </div>
+      <div class="mkapi-section-body examples"><div class="highlight"><pre><span></span><code><span class="o">&gt;&gt;&gt;</span> <span class="n">foo</span> <span class="o">=</span> <span class="n">Wrapper</span><span class="p">(</span><span class="kc">True</span><span class="p">)</span>
+<span class="o">&gt;&gt;&gt;</span> <span class="c1"># foo.name == &#39;foo&#39;</span>
+<span class="o">&gt;&gt;&gt;</span> <span class="c1"># foo.value == True</span>
+</code></pre></div>
+<div class="highlight"><pre><span></span><code><span class="o">&gt;&gt;&gt;</span> <span class="n">val</span> <span class="o">=</span> <span class="p">{}</span>
+<span class="o">&gt;&gt;&gt;</span> <span class="n">bar</span> <span class="o">=</span> <span class="n">Wrapper</span><span class="p">(</span><span class="n">val</span><span class="p">)</span>
+<span class="o">&gt;&gt;&gt;</span> <span class="c1"># bar.name == &#39;bar&#39;</span>
+<span class="o">&gt;&gt;&gt;</span> <span class="c1"># bar.value is val</span>
+</code></pre></div></div>
+    </div>
+  <div class="mkapi-section parameters">
+      <div class="mkapi-section-name parameters">
+          <span class="mkapi-section-name-body parameters">Parameters</span> 
+        </div>
+      <div class="mkapi-section-body parameters"><ul class="mkapi-items">
+<li><code class="mkapi-item-name">value</code>
+<span class="mkapi-item-type">(any)</span>
+<span class="mkapi-item-dash">&mdash;</span> <span class="mkapi-item-description">The value to be wrapped</span></li>
+
+<li><code class="mkapi-item-name">raise_exc</code>
+<span class="mkapi-item-type">(bool, optional)</span>
+<span class="mkapi-item-dash">&mdash;</span> <span class="mkapi-item-description">Whether to raise exception when varname is failed to retrieve</span></li>
+
+
+</ul></div>
+    </div>
+  <div class="mkapi-section attributes">
+      <div class="mkapi-section-name attributes">
+          <span class="mkapi-section-name-body attributes">Attributes</span> 
+        </div>
+      <div class="mkapi-section-body attributes"><ul class="mkapi-items">
+<li><code class="mkapi-item-name">name</code>
+
+<span class="mkapi-item-dash">&mdash;</span> <span class="mkapi-item-description">The variable name to which the instance is assigned</span></li>
+
+<li><code class="mkapi-item-name">value</code>
+
+<span class="mkapi-item-dash">&mdash;</span> <span class="mkapi-item-description">The value this wrapper wraps</span></li>
+
+
+</ul></div>
+    </div>
+  </div>
+
+</div>
+                
+              
+              
+                
+
+
+              
+            </article>
+          </div>
+        </div>
+      </main>
+      
+        
+<footer class="md-footer">
+  
+    <div class="md-footer-nav">
+      <nav class="md-footer-nav__inner md-grid" aria-label="Footer">
+        
+          <a href="../.." class="md-footer-nav__link md-footer-nav__link--prev" rel="prev">
+            <div class="md-footer-nav__button md-icon">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
+            </div>
+            <div class="md-footer-nav__title">
+              <div class="md-ellipsis">
+                <span class="md-footer-nav__direction">
+                  Previous
+                </span>
+                Home
+              </div>
+            </div>
+          </a>
+        
+        
+          <a href="../../CHANGELOG/" class="md-footer-nav__link md-footer-nav__link--next" rel="next">
+            <div class="md-footer-nav__title">
+              <div class="md-ellipsis">
+                <span class="md-footer-nav__direction">
+                  Next
+                </span>
+                Change Log
+              </div>
+            </div>
+            <div class="md-footer-nav__button md-icon">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11H4z"/></svg>
+            </div>
+          </a>
+        
+      </nav>
+    </div>
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-footer-copyright">
+        
+        Made with
+        <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+          Material for MkDocs
+        </a>
+      </div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    
+      <script src="../../assets/javascripts/vendor.08c56446.min.js"></script>
+      <script src="../../assets/javascripts/bundle.6ced434e.min.js"></script><script id="__lang" type="application/json">{"clipboard.copy": "Copy to clipboard", "clipboard.copied": "Copied to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.placeholder": "Search", "search.result.placeholder": "Type to start searching", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.term.missing": "Missing"}</script>
+      
+      <script>
+        app = initialize({
+          base: "../..",
+          features: [],
+          search: Object.assign({
+            worker: "../../assets/javascripts/worker/search.8c7e0a7e.min.js"
+          }, typeof search !== "undefined" && search)
+        })
+      </script>
+      
+        <script src="../../js/mkapi.js"></script>
+      
+    
+  </body>
+</html>
